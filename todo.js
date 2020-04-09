@@ -6,7 +6,11 @@ while (val>0) {
 }
 
 
-
+function addItem(params) {
+    var input =document.getElementById('input');//grabbing the input from document
+    var ItemValue=input.value;
+    ul =
+}
 
 
 
