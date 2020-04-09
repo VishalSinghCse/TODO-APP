@@ -1,17 +1,28 @@
-var val=5;
+var ul =document.getElementById('list');
+var li ; //declaring li
 
-while (val>0) {
-    console.log(val);
-    val=val-1; //val--    
-}
+var addButton =document.getElementById('add');
+addButton.addEventListener('click',addItem)
 
+var removeButton=document.getElementById('remove');
+removeButton.addEventListener('click',removeitem)
 
 function addItem(params) {
     var input =document.getElementById('input');//grabbing the input from document
     var ItemValue=input.value;
-    ul =
-}
+    ul =document.getElementById('list');
+    var textnode =document.createTextNode(item); //grab list
 
+    if(item==''){ //item is empty string
+        return false;
+        //Add a p tag and assign a value of "ENTER TODO
+    } else{
+        //declaring checkbox  on the go //li initialized now but declared above
+        li =document.createElement('li') //first we need to create an LI,then input then label
+        var checkbox =document.createElement('input')
+    }
+
+}
 
 
 
