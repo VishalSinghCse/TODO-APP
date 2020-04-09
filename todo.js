@@ -40,13 +40,15 @@ function addItem() {
         //add these elements on web page
 
         ul.appendChild(label); //generating the element
-        li.appendChild(checkbox)//
-
+        li.appendChild(checkbox)// "
         label.appendChild(textnode);//putting inside text node
         li.appendChild(label);
-
         ul.insertBefore(li, ul.childNodes[0]);
-        li.className ='visual';
+        
+        setTimeout(() => {
+            li.className = 'visual';
+
+        }, 5);
 
         input.value='';//clear after input
     }
@@ -56,8 +58,8 @@ function addItem() {
 function removeItem() {
     li =ul.children
         for (let index = 0; index < li.length; index++) {
-            while (li[index] &&li[index].children[0].checked) {
-                
+            while ( li[index] && li[index].children[0].checked) {
+                ul.removeChild(li[index])
             }
         }
 }
