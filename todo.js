@@ -13,7 +13,7 @@ function addItem() {
     ul =document.getElementById('list');
     var textnode =document.createTextNode(item); //grab list what ever the user has written
 
-    if(item==''){ //item is empty string
+    if(item===''){ //item is empty string
         return false;
         //Add a p tag and assign a value of "ENTER TODO
     } else{
