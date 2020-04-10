@@ -5,7 +5,7 @@ var addButton =document.getElementById('add');
 addButton.addEventListener('click',addItem)
 
 var removeButton=document.getElementById('remove');
-removeButton.addEventListener('click',removeitem)
+removeButton.addEventListener('click',removeItem)
 
 function addItem() {
     var input =document.getElementById('input');//grabbing the input from document
