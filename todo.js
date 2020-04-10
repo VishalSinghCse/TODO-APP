@@ -11,7 +11,7 @@ function addItem() {
     var input =document.getElementById('input');//grabbing the input from document
     var item=input.value;
     ul =document.getElementById('list');
-    var textnode =document.createTextNode(item); //grab list
+    var textnode =document.createTextNode(item); //grab list what ever the user has written
 
     if(item==''){ //item is empty string
         return false;
